@@ -17,11 +17,12 @@
 
 ## 🎥 System Walkthrough & Interactive Demo
 
-Watch JurisCore perform automated legal clause extraction, apply statutory rules, redline compliance deviations, and provide an editorial clause-reading experience:
-
-https://github.com/user-attachments/assets/juriscore_walkthrough.mp4
-
-> *Video file also bundled locally in [`media/juriscore_walkthrough.mp4`](media/juriscore_walkthrough.mp4).*
+<div align="center">
+  <a href="media/juriscore_walkthrough.mp4">
+    <img src="media/demo.gif" alt="JurisCore System Walkthrough Demo" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  </a>
+  <p><em>Click the preview above or <a href="media/juriscore_walkthrough.mp4">click here to watch the full HD video walkthrough (MP4)</a>.</em></p>
+</div>
 
 ---
 

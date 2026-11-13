@@ -3,7 +3,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
-[![POPIA Compliant](https://img.shields.io/badge/Compliance-POPIA%20%7C%20Companies%20Act-purple.svg)](#statutory-compliance--playbook-rules)
+[![POPIA Compliant](https://img.shields.io/badge/Compliance-POPIA%20%7C%20Firm%20Playbook-purple.svg)](#statutory-compliance--playbook-rules)
 [![Architecture](https://img.shields.io/badge/Architecture-Proprietary%20Engine-black.svg)](#data-privacy--verification-notice)
 
 ---
@@ -30,7 +30,7 @@
 
 **JurisCore** is a specialized legal technology application combining deterministic statutory rules engines with supervised agentic AI workflows. Engineered specifically for corporate commercial law and regulatory audit in the South African jurisdiction, it bridges the gap between deep statutory analysis and clean, readable legal user experiences.
 
-It empowers legal teams to audit complex commercial agreements, redline non-compliant terms, detect statutory compliance gaps (such as POPIA data processing terms and Companies Act director indemnities), and explore contracts through an distraction-free editorial interface.
+It empowers legal teams to audit commercial agreements, generate proposed contract amendments, detect statutory compliance gaps (such as POPIA operator obligations, security measures, and breach-notification SLAs), and explore contracts through a distraction-free editorial interface.
 
 ---
 
@@ -48,15 +48,15 @@ flowchart TD
         Extractor --> DeterministicEngine[Deterministic Rules Engine]
         Extractor --> AgenticGraph[Supervised Agentic Graph]
 
-        DeterministicEngine -->|Statutory Checklist| StatRules[POPIA, Companies Act, CPA Baselines]
+        DeterministicEngine -->|Rule Packs & Registry| StatRules[POPIA s19/21/22, Firm Playbook, Source Registry]
         AgenticGraph -->|Contextual Reasoning| RiskAudit[Risk & Ambiguity Identification]
     end
 
     subgraph Output["Editorial Workspace & Delivery"]
-        StatRules --> UnifiedReport[Unified Audit Report & Redline Proposal]
+        StatRules --> UnifiedReport[Unified Audit Report & Proposed Amendments]
         RiskAudit --> UnifiedReport
-        UnifiedReport --> ReaderView[Editorial Clause Reader & Side-by-Side Redline]
-        UnifiedReport --> Export[Export Clean / Redlined DOCX]
+        UnifiedReport --> ReaderView[Editorial Clause Reader & Proposed Redlines]
+        UnifiedReport --> Export[Export Executive Compliance DOCX]
     end
 ```
 
@@ -64,12 +64,12 @@ flowchart TD
 
 ## ⚖️ Statutory Compliance & Playbook Rules
 
-JurisCore comes pre-loaded with commercial playbook rules mapped directly to South African statutes and common law standards:
+JurisCore comes pre-loaded with deterministic rule packs and a statutory source registry:
 
-1. **POPIA Section 19 & 21 Compliance:** Audits Operator and Responsible Party obligations, mandatory breach notification windows, and cross-border data transfer limitations.
-2. **Companies Act 71 of 2008:** Scans director indemnification clauses against Section 78 restrictions to detect prohibited liability waivers.
-3. **Consumer Protection Act (CPA) Section 48 & 49:** Identifies unfair, unreasonable, or unjust contract terms and mandatory notice requirements for indemnity risks.
-4. **Commercial Risk Redlining:** Automatically proposes surgical redline amendments with statutory citations and lawyer-ready commentary.
+1. **`POPIA_DEFAULT_v1` (POPIA Sections 19, 21 & 22):** Audits Operator confidentiality and authorisation obligations (s21), technical and organisational security measures (s19), breach-notification SLAs (s22), and statutory citations.
+2. **`FIRM_PLAYBOOK_v1` (Commercial Contracting Playbook):** Enforces a 12-month-fees Limitation of Liability cap, flags prohibited unlimited indemnity language, enforces a stricter 24-hour vendor breach-notification SLA, and supports adding custom playbook rules via API.
+3. **`LegalSourceRegistry`:** Validates statutory citations against registered entries covering POPIA (s19, s21, s22), Companies Act 71 of 2008 (s66), and GDPR (Article 28).
+4. **Proposed Amendments & DOCX Export:** Generates surgical proposed clause amendments with legal basis commentary and exports executive compliance reports in HTML, JSON, and WordprocessingML `.docx` formats.
 
 ---
 

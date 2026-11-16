@@ -91,4 +91,12 @@ JurisCore departs from cluttered multi-chart dashboards in favor of an **editori
 
 ---
 
-Architected and maintained by **Sandiso Mazibuko**.
+---
+
+## 🔗 Portfolio & Technical Dossier
+
+- **Live System Overview:** [sandisomazibuko.com/technology/#juriscore](https://sandisomazibuko.com/technology/#juriscore)
+- **Statutory Audit Dossier:** [JurisCore Statutory Audit Report](https://sandisomazibuko.com/documents/juriscore-statutory-audit-report/)
+- **Canonical Portfolio:** [Sandiso Mazibuko](https://sandisomazibuko.com/) · [hello@sandisomazibuko.com](mailto:hello@sandisomazibuko.com)
+
+Architected and maintained by **[Sandiso Mazibuko](https://sandisomazibuko.com/)**.
